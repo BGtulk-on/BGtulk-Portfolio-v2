@@ -22,32 +22,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     var expBoxes = document.querySelectorAll(".exp-box")
+    var isMobile = window.innerWidth < 768
 
     expBoxes.forEach(function (box, idx) {
         var dir = box.dataset.dir
         var xVal = dir === "left" ? -180 : 180
+
+        if (isMobile) xVal = dir === "left" ? -80 : 80
+
         var dateEl = box.querySelector(".exp-date")
 
-        gsap.to(box, {
-            keyframes: [
-                { x: xVal, ease: "power2.out" },
-                { x: 0, ease: "power2.in" }
-            ],
-            scrollTrigger: {
-                trigger: box,
-                start: "top 80%",
-                end: "top -20%",
-                scrub: 1
-            }
-        })
+        if (isMobile) {
+            gsap.set(box, { x: xVal })
 
-        if (dateEl) {
-            gsap.to(dateEl, {
+            gsap.to(box, {
                 keyframes: [
-                    { opacity: 0, ease: "none" },
-                    { opacity: 1, ease: "power2.out" },
-                    { opacity: 1, ease: "none" },
-                    { opacity: 0, ease: "power2.in" }
+                    { x: 0, ease: "power2.out" },
+                    { x: xVal, ease: "power2.in" }
+                ],
+                scrollTrigger: {
+                    trigger: box,
+                    start: "top 85%",
+                    end: "top -15%",
+                    scrub: 1
+                }
+            })
+
+            if (dateEl) {
+                gsap.to(dateEl, {
+                    keyframes: [
+                        { opacity: 1, ease: "none" },
+                        { opacity: 1, ease: "none" },
+                        { opacity: 0, ease: "power2.in" }
+                    ],
+                    scrollTrigger: {
+                        trigger: box,
+                        start: "top 85%",
+                        end: "top -15%",
+                        scrub: 1
+                    }
+                })
+            }
+
+        } else {
+            gsap.to(box, {
+                keyframes: [
+                    { x: xVal, ease: "power2.out" },
+                    { x: 0, ease: "power2.in" }
                 ],
                 scrollTrigger: {
                     trigger: box,
@@ -56,6 +77,23 @@ document.addEventListener("DOMContentLoaded", function () {
                     scrub: 1
                 }
             })
+
+            if (dateEl) {
+                gsap.to(dateEl, {
+                    keyframes: [
+                        { opacity: 0, ease: "none" },
+                        { opacity: 1, ease: "power2.out" },
+                        { opacity: 1, ease: "none" },
+                        { opacity: 0, ease: "power2.in" }
+                    ],
+                    scrollTrigger: {
+                        trigger: box,
+                        start: "top 80%",
+                        end: "top -20%",
+                        scrub: 1
+                    }
+                })
+            }
         }
     })
 

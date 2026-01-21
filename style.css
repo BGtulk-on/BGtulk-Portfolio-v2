@@ -39,12 +39,12 @@ body {
         font-size: 4rem;
         letter-spacing: -2px;
         transform: none;
-        text-align: center;
+        text-align: left;
     }
 
     .txt-lg {
         font-size: 4rem;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 }
