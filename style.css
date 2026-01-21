@@ -1,0 +1,38 @@
+body {
+    background-color: #050505;
+    color: #f5deb3;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: #f16a50;
+    color: #ffffff;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg) scaleX(1.5);
+}
+
+.txt-lg {
+    font-size: 10rem;
+    line-height: 1;
+}
+
+.text-popp {
+    color: #f16a50;
+}
+
+@media (max-width: 768px) {
+    .vertical-text {
+        writing-mode: horizontal-tb;
+        font-size: 6rem;
+        letter-spacing: -5px;
+        transform: none;
+    }
+
+    .txt-lg {
+        font-size: 5rem;
+    }
+}
