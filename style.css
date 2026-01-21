@@ -1,3 +1,7 @@
+* {
+    font-family: 'Switzer', sans-serif;
+}
+
 body {
     background-color: #050505;
     color: #f5deb3;
@@ -24,15 +28,23 @@ body {
     color: #f16a50;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
     .vertical-text {
         writing-mode: horizontal-tb;
-        font-size: 6rem;
-        letter-spacing: -5px;
+        font-size: 4rem;
+        letter-spacing: -2px;
         transform: none;
+        text-align: center;
     }
 
     .txt-lg {
-        font-size: 5rem;
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
     }
 }

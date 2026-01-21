@@ -4,83 +4,659 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BGtulk Portfolio</title>
+    <title>BGtulk | Yovo Mihov</title>
+    <meta name="description" content="BGtulk(Yovo Mihov) Portfolio">
+    <meta name="keywords" content="BGtulk, Yovo Mihov, Portfolio, Full-Stack Developer, UI/UX Developer">
+    <meta name="author" content="Yovo Mihov">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link
         href="https://api.fontshare.com/v2/css?f[]=switzer@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 </head>
 
-<body class=" antialiased min-h-screen flex items-center justify-center p-4">
-    <div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-center h-full">
-        <div class="flex justify-center md:justify-end ">
-            <h1
-                class="txt-lg font-black text-white vertical-text select-none cursor-default hover:text-acscent  transition-colors duration-500">
-                BGtulk
-            </h1>
-        </div>
+<body class=" antialiased   ">
+    <section class=" min-h-screen flex items-center justify-center p-4 relative ">
+        <div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-center h-full">
+            <div class="flex justify-start md:justify-end ">
+                <h1
+                    class="txt-lg font-black text-white vertical-text select-none cursor-default hover:text-acscent  transition-colors duration-500">
+                    BGtulk
+                </h1>
+            </div>
 
-        <div class="flex flex-col gap-8   text-lg md:text-xl font-light max-w-md relative z-10">
-            <img src="fox.gif" alt="fox"
-                class="absolute -top-32 left-0 w-32 h-auto pointer-events-none select-none mix-blend-screen opacity-80">
-            <p class="leading-relaxed">
-                I'm Yovo Mihov, a <span class="text-popp">Full-Stack Developer</span> and <span class="text-popp">UI/UX
-                    Developer</span> based in Bulgaria with over <span class="text-popp">3 years</span> of
-                experience. High school student proficient in <span class="text-popp">web
-                    development</span>.
-                <span class="text-gray-400">
-                    When I'm not working or tinkering with code, I'm
-                    studying how to escape the Matrix. Actually for hire
-                    <span class="grayscale hover:grayscale-0 transition-all duration-300">😋</span> .
-                </span>
-            </p>
+            <div class="flex flex-col gap-8   text-lg md:text-xl font-light max-w-md relative z-10">
+                <img src="fox.gif" alt="fox"
+                    class="absolute -top-32 left-0 w-32 h-auto pointer-events-none select-none mix-blend-screen opacity-80">
+                <p class="leading-relaxed">
+                    I'm Yovo Mihov, a <span class="text-popp">Full-Stack Developer</span> and <span
+                        class="text-popp">UI/UX
+                        Developer</span> based in Bulgaria with over <span class="text-popp">3 years</span> of
+                    experience. High school student proficient in <span class="text-popp">web
+                        development</span>.
+                    <span class="text-gray-400">
+                        When I'm not working or tinkering with code, I'm
+                        studying how to escape the Matrix. Actually for hire
+                        <span class="grayscale hover:grayscale-0 transition-all duration-300">😋</span> .
+                    </span>
+                </p>
 
-            <div class="flex gap-6 items-center">
-                <a href="https://github.com/BGtulk-on" target="_blank" rel="noopener noreferrer"
-                    class="text-gray-400 hover:text-white transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-github">
-                        <path
-                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                        <path d="M9 18c-4.51 2-5-2-7-2" />
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/yovo-mihov-05a73a33b/" target="_blank" rel="noopener noreferrer"
-                    class="text-gray-400 hover:text-white transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-linkedin">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect width="4" height="12" x="2" y="9" />
-                        <circle cx="4" cy="4" r="2" />
-                    </svg>
-                </a>
-                <div class="flex items-center gap-2 group">
-                    <a href="mailto:bgtulk123@gmail.com"
+                <div class="flex gap-6 items-center">
+                    <a href="https://github.com/BGtulk-on" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-white transition-colors duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-mail">
-                            <rect width="20" height="16" x="2" y="4" rx="2" />
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            class="lucide lucide-github">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
                         </svg>
                     </a>
-                    <span
-                        class="max-w-0 overflow-hidden opacity-0 group-hover:max-w-[200px] group-hover:opacity-100 transition-all duration-500 ease-out whitespace-nowrap text-sm text-white cursor-text select-all">
-                        bgtulk123@gmail.com
-                    </span>
+                    <a href="https://www.linkedin.com/in/yovo-mihov-05a73a33b/" target="_blank"
+                        rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <div class="flex items-center gap-2 group">
+                        <a href="mailto:bgtulk123@gmail.com"
+                            class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-mail">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </a>
+                        <span
+                            class="max-w-0 overflow-hidden opacity-0 group-hover:max-w-[200px] group-hover:opacity-100 transition-all duration-500 ease-out whitespace-nowrap text-sm text-white cursor-text select-all">
+                            bgtulk123@gmail.com
+                        </span>
+                    </div>
                 </div>
             </div>
+
+
+
+        </div>
+
+        <div class=" absolute bottom-10 left-0 right-0 mx-auto w-fit animate-bounce cursor-pointer "
+            onclick=" document.getElementById('tools_sec').scrollIntoView({behavior: 'smooth'}) ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-chevron-down opacity-50 hover:opacity-100 transition-opacity">
+                <path d="m6 9 6 6 6-6" />
+            </svg>
+        </div>
+
+    </section>
+
+    <section id="tools_sec" class=" py-24 bg-[#080808] flex flex-col items-center gap-8 ">
+        <h2 class=" text-4xl  font-light tracking-wide text-center ">
+            What I'm using:
+        </h2>
+
+        <div class=" w-full max-w-4xl flex flex-wrap justify-center gap-10 px-4 ">
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-html5-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">HTML</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-css3-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">CSS</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-javascript-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">JavaScript</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-typescript-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">TypeScript</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-python-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">Python</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-php-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">PHP</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-react-original colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">React</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-vuejs-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">Vue.js</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-tailwindcss-original colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">Tailwind</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-nodejs-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">Node.js</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-git-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">Git</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-github-original text-6xl text-white transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">GitHub</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-figma-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">Figma</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-postgresql-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">PostgreSQL</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-mysql-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">MySQL</span>
+            </div>
+
+            <div class=" group flex flex-col items-center relative ">
+                <i
+                    class="devicon-linux-plain text-6xl text-white transition-transform duration-300 group-hover:-translate-y-6"></i>
+                <span
+                    class="opacity-0 group-hover:opacity-100 absolute -bottom-2 transition-opacity duration-300 text-sm text-[#f5deb3] font-light tracking-wide">Linux</span>
+            </div>
+
+        </div>
+
+        <div class="mt-8 text-center px-4">
+            <p class="text-[#f5deb3]/60 font-light text-sm md:text-base">
+                Based of Github my top language is: <span id="github-top-lang"
+                    class="text-[#f16a50] font-semibold">...</span>
+            </p>
         </div>
 
 
+    </section>
 
-    </div>
+    <section id="experience_sec" class=" py-20 flex flex-col items-center gap-16 ">
+        <h2 class=" text-4xl  font-light tracking-wide text-center text-[#f5deb3] ">
+            my experience:
+        </h2>
+
+        <div id="exp-container" class=" w-full max-w-2xl flex flex-col items-center px-4 relative ">
+
+            <div class="exp-wrap relative w-full flex justify-center mb-8">
+                <div class="exp-box relative p-6 border-4 border-[#f16a50]/30 text-[#f5deb3] min-h-[100px] flex flex-col items-center justify-center hover:bg-[#f16a50]/5 transition-colors duration-300 w-full max-w-md bg-black"
+                    data-dir="left">
+                    <h3 class=" font-bold mb-2 uppercase tracking-wider ">Hosting events</h3>
+                    <p class=" text-center text-sm text-gray-400 ">Organizing school events with peers, inviting
+                        successful guest speakers to present and engage with students.</p>
+                    <span
+                        class="exp-date absolute -bottom-6 left-1/2 -translate-x-1/2 text-[#f16a50] text-sm opacity-0">2025</span>
+                </div>
+            </div>
+
+            <div class="exp-wrap relative w-full flex justify-center mb-8">
+                <div class="exp-box relative p-6 border-4 border-[#f16a50]/30 text-[#f5deb3] min-h-[100px] flex flex-col items-center justify-center hover:bg-[#f16a50]/5 transition-colors duration-300 w-full max-w-md bg-black"
+                    data-dir="right">
+                    <h3 class=" font-bold mb-2 uppercase tracking-wider ">Tech Academy</h3>
+                    <p class=" text-center text-sm text-gray-400 ">Completed a three-week Tech Academy program, worked
+                        on homework management system. 2nd place.</p>
+                    <span
+                        class="exp-date absolute -bottom-6 left-1/2 -translate-x-1/2 text-[#f16a50] text-sm opacity-0">2025</span>
+                </div>
+            </div>
+
+            <div class="exp-wrap relative w-full flex justify-center mb-8">
+                <div class="exp-box relative p-6 border-4 border-[#f16a50]/30 text-[#f5deb3] min-h-[100px] flex flex-col items-center justify-center hover:bg-[#f16a50]/5 transition-colors duration-300 w-full max-w-md bg-black"
+                    data-dir="left">
+                    <h3 class=" font-bold mb-2 uppercase tracking-wider ">Teenovator 7</h3>
+                    <p class=" text-center text-sm text-gray-400 ">Participated in the Teenovator 7 program, where I
+                        collaborated to develop a business idea and presented it to investors.</p>
+                    <span
+                        class="exp-date absolute -bottom-6 left-1/2 -translate-x-1/2 text-[#f16a50] text-sm opacity-0">2025</span>
+                </div>
+            </div>
+
+            <div class="exp-wrap relative w-full flex justify-center mb-8">
+                <div class="exp-box relative p-6 border-4 border-[#f16a50]/30 text-[#f5deb3] min-h-[100px] flex flex-col items-center justify-center hover:bg-[#f16a50]/5 transition-colors duration-300 w-full max-w-md bg-black"
+                    data-dir="right">
+                    <h3 class=" font-bold mb-2 uppercase tracking-wider ">Teaching in school</h3>
+                    <p class=" text-center text-sm text-gray-400 ">Taught a three-month course on web development basics
+                        together with three peers.</p>
+                    <span
+                        class="exp-date absolute -bottom-6 left-1/2 -translate-x-1/2 text-[#f16a50] text-sm opacity-0">2024</span>
+                </div>
+            </div>
+
+            <div class="exp-wrap relative w-full flex justify-center mb-8">
+                <div class="exp-box relative p-6 border-4 border-[#f16a50]/30 text-[#f5deb3] min-h-[100px] flex flex-col items-center justify-center hover:bg-[#f16a50]/5 transition-colors duration-300 w-full max-w-md bg-black"
+                    data-dir="left">
+                    <h3 class=" font-bold mb-2 uppercase tracking-wider ">Bogalha - Portugal</h3>
+                    <p class=" text-center text-sm text-gray-400 ">Completed a two-week internship in Portugal through
+                        the Erasmus+ program.</p>
+                    <span
+                        class="exp-date absolute -bottom-6 left-1/2 -translate-x-1/2 text-[#f16a50] text-sm opacity-0">2024</span>
+                </div>
+            </div>
+
+            <div class="exp-wrap relative w-full flex justify-center mb-8">
+                <div class="exp-box relative p-6 border-4 border-[#f16a50]/30 text-[#f5deb3] min-h-[100px] flex flex-col items-center justify-center hover:bg-[#f16a50]/5 transition-colors duration-300 w-full max-w-md bg-black"
+                    data-dir="right">
+                    <h3 class=" font-bold mb-2 uppercase tracking-wider ">Vivacom - Bulgaria</h3>
+                    <p class=" text-center text-sm text-gray-400 ">Completed a two-week internship in Bulgaria at
+                        Vivacom.</p>
+                    <span
+                        class="exp-date absolute -bottom-6 left-1/2 -translate-x-1/2 text-[#f16a50] text-sm opacity-0">2024</span>
+                </div>
+            </div>
+
+            <div class="exp-wrap relative w-full flex justify-center mb-8">
+                <div class="exp-box relative p-6 border-4 border-[#f16a50]/30 text-[#f5deb3] min-h-[100px] flex flex-col items-center justify-center hover:bg-[#f16a50]/5 transition-colors duration-300 w-full max-w-md bg-black"
+                    data-dir="left">
+                    <h3 class=" font-bold mb-2 uppercase tracking-wider ">Telerik training</h3>
+                    <p class=" text-center text-sm text-gray-400 ">Web game developing with javascript and IT & web
+                        development.</p>
+                    <span
+                        class="exp-date absolute -bottom-6 left-1/2 -translate-x-1/2 text-[#f16a50] text-sm opacity-0">2023</span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="projects_sec" class=" py-20 bg-[#080808] flex flex-col items-center gap-12 ">
+        <h2 class=" text-4xl  font-light tracking-wide text-center text-[#f5deb3] ">
+            cool projects:
+        </h2>
+
+        <div class=" w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 px-4 ">
+
+            <div
+                class="project-card bg-black border-2 border-[#f16a50]/30 overflow-hidden hover:border-[#f16a50] transition-all duration-300 group">
+                <div class="h-40 bg-[#0a0a0a] overflow-hidden border-b border-[#f16a50]/20">
+                    <img src="https://via.placeholder.com/400x160/161b22/f5deb3?text=Project+1" alt="Project 1"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-[#f5deb3] font-semibold text-lg mb-2">Project Name</h3>
+                    <p class="text-[#f5deb3]/60 text-sm mb-4 line-clamp-2">A short description of what this project does
+                        and
+                        the problem it solves.</p>
+                    <div class="flex gap-3 mb-4">
+                        <i class="devicon-javascript-plain colored text-xl"></i>
+                        <i class="devicon-react-original colored text-xl"></i>
+                        <i class="devicon-nodejs-plain colored text-xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex gap-3">
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" x2="21" y1="14" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="text-xs text-[#f5deb3]/40">with <span
+                                class="text-[#f16a50]">@collaborator</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="project-card bg-black border-2 border-[#f16a50]/30 overflow-hidden hover:border-[#f16a50] transition-all duration-300 group">
+                <div class="h-40 bg-[#0a0a0a] overflow-hidden border-b border-[#f16a50]/20">
+                    <img src="https://via.placeholder.com/400x160/161b22/f5deb3?text=Project+2" alt="Project 2"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-[#f5deb3] font-semibold text-lg mb-2">Another Project</h3>
+                    <p class="text-[#f5deb3]/60 text-sm mb-4 line-clamp-2">Description of the second project with key
+                        features and technologies used.</p>
+                    <div class="flex gap-3 mb-4">
+                        <i class="devicon-python-plain colored text-xl"></i>
+                        <i class="devicon-postgresql-plain colored text-xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex gap-3">
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" x2="21" y1="14" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="text-xs text-[#f5deb3]/40">with <span
+                                class="text-[#f16a50]">@teammate</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="project-card bg-black border-2 border-[#f16a50]/30 overflow-hidden hover:border-[#f16a50] transition-all duration-300 group">
+                <div class="h-40 bg-[#0a0a0a] overflow-hidden border-b border-[#f16a50]/20">
+                    <img src="https://via.placeholder.com/400x160/161b22/f5deb3?text=Project+3" alt="Project 3"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-[#f5deb3] font-semibold text-lg mb-2">Solo Project</h3>
+                    <p class="text-[#f5deb3]/60 text-sm mb-4 line-clamp-2">A personal project built independently to
+                        learn
+                        new technologies.</p>
+                    <div class="flex gap-3 mb-4">
+                        <i class="devicon-vuejs-plain colored text-xl"></i>
+                        <i class="devicon-tailwindcss-original colored text-xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex gap-3">
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" x2="21" y1="14" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="project-card bg-black border-2 border-[#f16a50]/30 overflow-hidden hover:border-[#f16a50] transition-all duration-300 group">
+                <div class="h-40 bg-[#0a0a0a] overflow-hidden border-b border-[#f16a50]/20">
+                    <img src="https://via.placeholder.com/400x160/0a0a0a/f5deb3?text=Project+4" alt="Project 4"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-[#f5deb3] font-semibold text-lg mb-2">Project Four</h3>
+                    <p class="text-[#f5deb3]/60 text-sm mb-4 line-clamp-2">Description of the fourth project with its
+                        features.</p>
+                    <div class="flex gap-3 mb-4">
+                        <i class="devicon-html5-plain colored text-xl"></i>
+                        <i class="devicon-css3-plain colored text-xl"></i>
+                        <i class="devicon-javascript-plain colored text-xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex gap-3">
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" x2="21" y1="14" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="text-xs text-[#f5deb3]/40">with <span class="text-[#f16a50]">@friend</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="project-card bg-black border-2 border-[#f16a50]/30 overflow-hidden hover:border-[#f16a50] transition-all duration-300 group">
+                <div class="h-40 bg-[#0a0a0a] overflow-hidden border-b border-[#f16a50]/20">
+                    <img src="https://via.placeholder.com/400x160/0a0a0a/f5deb3?text=Project+5" alt="Project 5"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-[#f5deb3] font-semibold text-lg mb-2">Project Five</h3>
+                    <p class="text-[#f5deb3]/60 text-sm mb-4 line-clamp-2">Another cool project with interesting
+                        features and functionality.</p>
+                    <div class="flex gap-3 mb-4">
+                        <i class="devicon-php-plain colored text-xl"></i>
+                        <i class="devicon-mysql-plain colored text-xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex gap-3">
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" x2="21" y1="14" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="project-card bg-black border-2 border-[#f16a50]/30 overflow-hidden hover:border-[#f16a50] transition-all duration-300 group">
+                <div class="h-40 bg-[#0a0a0a] overflow-hidden border-b border-[#f16a50]/20">
+                    <img src="https://via.placeholder.com/400x160/0a0a0a/f5deb3?text=Project+6" alt="Project 6"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-[#f5deb3] font-semibold text-lg mb-2">Project Six</h3>
+                    <p class="text-[#f5deb3]/60 text-sm mb-4 line-clamp-2">The sixth project showcasing different skills
+                        and technologies.</p>
+                    <div class="flex gap-3 mb-4">
+                        <i class="devicon-typescript-plain colored text-xl"></i>
+                        <i class="devicon-react-original colored text-xl"></i>
+                        <i class="devicon-tailwindcss-original colored text-xl"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex gap-3">
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" x2="21" y1="14" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="text-xs text-[#f5deb3]/40">with <span class="text-[#f16a50]">@partner</span></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class=" py-12 bg-black border-t border-[#f16a50]/20 ">
+        <div class=" container mx-auto max-w-5xl px-4 ">
+            <div class=" flex flex-col md:flex-row justify-between items-start gap-8 mb-8 ">
+                <div class=" flex flex-col gap-4 ">
+                    <h4 class=" text-[#f5deb3] font-semibold mb-2 ">Connect with me</h4>
+                    <div class="flex gap-6 items-center">
+                        <a href="https://github.com/BGtulk-on" target="_blank" rel="noopener noreferrer"
+                            class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yovo-mihov-05a73a33b/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <div class="flex items-center gap-2 group">
+                            <a href="mailto:bgtulk123@gmail.com"
+                                class="text-[#f5deb3]/50 hover:text-[#f16a50] transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                            </a>
+                            <span
+                                class="max-w-0 overflow-hidden opacity-0 group-hover:max-w-[200px] group-hover:opacity-100 transition-all duration-500 ease-out whitespace-nowrap text-sm text-[#f5deb3]/70 cursor-text select-all">
+                                bgtulk123@gmail.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" flex flex-col gap-4 text-right ">
+                    <h4 class=" text-[#f5deb3] font-semibold mb-2 ">GitHub Stats</h4>
+                    <div class=" flex flex-col gap-2 ">
+                        <div class=" flex items-center gap-2 justify-end ">
+                            <span class=" text-[#f5deb3]/50 text-sm ">Total Commits:</span>
+                            <span id="github-commits" class=" text-[#f16a50] font-bold ">...</span>
+                        </div>
+
+                        <div class=" flex items-center gap-2 justify-end ">
+                            <span class=" text-[#f5deb3]/50 text-sm ">Lines of Code:</span>
+                            <span id="github-lines" class=" text-[#f16a50] font-bold ">...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" border-t border-[#f16a50]/10 pt-6 text-center ">
+                <p class=" text-[#f5deb3]/40 text-sm ">© 2026 BGtulk. All rights reserved.</p>
+                <p class=" text-[#f5deb3]/60 text-sm mt-2 ">Made with <span class=" text-red-500 ">❤️</span> by BGtulk!
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
