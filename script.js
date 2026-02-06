@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             gsap.to(box, {
                 keyframes: [
+                    { x: xVal, ease: "none" },
                     { x: 0, ease: "power2.out" },
+                    { x: 0, ease: "none" },
                     { x: xVal, ease: "power2.in" }
                 ],
                 scrollTrigger: {
@@ -51,7 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
             if (dateEl) {
                 gsap.to(dateEl, {
                     keyframes: [
-                        { opacity: 1, ease: "none" },
+                        { opacity: 0, ease: "none" },
+                        { opacity: 1, ease: "power2.out" },
                         { opacity: 1, ease: "none" },
                         { opacity: 0, ease: "power2.in" }
                     ],
