@@ -193,4 +193,50 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     fetchGitHubStats()
+
+
+    var framz = []
+
+    for (var c = 0; c < 312; c++) {
+        var pikk = new Image()
+        var strN = c.toString()
+        while (strN.length < 4) {
+            strN = "0" + strN
+        }
+        pikk.src = "fox/frame_" + strN + ".gif"
+        framz.push(pikk)
+
+
+    }
+
+    function drw() {
+        var cns = document.getElementById("fx")
+        if (cns) {
+            var ctxx = cns.getContext("2d")
+            var currTm = Date.now() / 35
+            var indxe = Math.floor(currTm) % framz.length
+
+            if (framz[indxe] && framz[indxe].complete && framz[indxe].naturalWidth > 0) {
+                if (cns.width != framz[indxe].naturalWidth) {
+                    cns.width = framz[indxe].naturalWidth
+                    cns.height = framz[indxe].naturalHeight
+                }
+
+                ctxx.clearRect(0, 0, cns.width, cns.height)
+                ctxx.drawImage(framz[indxe], 0, 0)
+
+            }
+
+            requestAnimationFrame(drw)
+        }
+
+
+
+
+    }
+
+    drw()
+
+
+
 })

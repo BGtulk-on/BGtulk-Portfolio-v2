@@ -6,6 +6,12 @@ body {
     background-color: #050505;
     color: #f5deb3;
     overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 ::selection {
@@ -17,6 +23,12 @@ body {
     writing-mode: vertical-rl;
     text-orientation: sideways;
     transform: rotate(180deg) scaleX(1.5);
+}
+
+@-moz-document url-prefix() {
+    .vertical-text {
+        transform: rotate(180deg);
+    }
 }
 
 .txt-lg {
@@ -31,6 +43,13 @@ body {
 html,
 body {
     overflow-x: hidden;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none !important;
 }
 
 @media (max-width: 768px) {
