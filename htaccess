@@ -1,0 +1,17 @@
+ErrorDocument 400 http://bgtulk.dev/
+ErrorDocument 401 http://bgtulk.dev/
+ErrorDocument 403 http://bgtulk.dev/
+ErrorDocument 404 http://bgtulk.dev/
+ErrorDocument 503 http://bgtulk.dev/
+
+
+# Disable caching for all files
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+</IfModule>
+
+# Add cache buster version
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ $1 [E=nocache:1]
+</IfModule>
