@@ -21,23 +21,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    var expBoxes = document.querySelectorAll(".exp-box")
-    var isMobile = window.innerWidth < 768
+    let mm = gsap.matchMedia()   
 
-    expBoxes.forEach(function (box, idx) {
-        var dir = box.dataset.dir
-        var xVal = dir === "left" ? -180 : 180
+    mm.add("(max-width: 767px)", function () {
+        var expBoxes = document.querySelectorAll(".exp-box")
 
-        if (isMobile) xVal = dir === "left" ? -80 : 80
+        expBoxes.forEach(function (box, idx) {
+            var dir = box.dataset.dir
+            var xVal = dir === "left" ? -80 : 80 
+            var dateEl = box.querySelector(".exp-date")
 
-        var dateEl = box.querySelector(".exp-date")
-
-        if (isMobile) {
             gsap.set(box, { x: xVal })
+
 
             gsap.to(box, {
                 keyframes: [
-                    { x: xVal, ease: "none" },
                     { x: 0, ease: "power2.out" },
                     { x: 0, ease: "none" },
                     { x: xVal, ease: "power2.in" }
@@ -53,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (dateEl) {
                 gsap.to(dateEl, {
                     keyframes: [
-                        { opacity: 0, ease: "none" },
                         { opacity: 1, ease: "power2.out" },
                         { opacity: 1, ease: "none" },
                         { opacity: 0, ease: "power2.in" }
@@ -66,8 +63,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 })
             }
+        })
+    })
 
-        } else {
+
+
+    mm.add("(min-width: 768px)", function () {
+        var expBoxes = document.querySelectorAll(".exp-box")
+
+        expBoxes.forEach(function (box, idx) {
+            var dir = box.dataset.dir
+            var xVal = dir === "left" ? -180 : 180 
+            var dateEl = box.querySelector(".exp-date")
+
             gsap.to(box, {
                 keyframes: [
                     { x: xVal, ease: "power2.out" },
@@ -97,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 })
             }
-        }
+        })
     })
 
 
