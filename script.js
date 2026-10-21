@@ -198,15 +198,24 @@ document.addEventListener("DOMContentLoaded", function () {
     var framz = []
 
     for (var c = 0; c < 312; c++) {
-        var pikk = new Image()
-        var strN = c.toString()
-        while (strN.length < 4) {
-            strN = "0" + strN
+        framz.push(new Image())
+    }
+
+    // start downloading frames only after the page finished loading
+    function loadFramz() {
+        for (var c = 0; c < framz.length; c++) {
+            var strN = c.toString()
+            while (strN.length < 4) {
+                strN = "0" + strN
+            }
+            framz[c].src = "fox/frame_" + strN + ".gif"
         }
-        pikk.src = "fox/frame_" + strN + ".gif"
-        framz.push(pikk)
+    }
 
-
+    if (document.readyState === "complete") {
+        loadFramz()
+    } else {
+        window.addEventListener("load", loadFramz)
     }
 
     function drw() {

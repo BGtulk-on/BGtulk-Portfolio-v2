@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | BGtulk</title>
+    <meta name="description" content="Page not found - BGtulk (Yovo Mihov)">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=switzer@100,101,200,201,300,301,400,401,500,501,600,601,700,701,800,801,900,901&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            font-family: 'Switzer', sans-serif;
+        }
+
+        body {
+            background-color: #050505;
+            color: #f5deb3;
+            overflow-x: hidden;
+        }
+
+        ::selection {
+            background: #f16a50;
+            color: #ffffff;
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+            transform: rotate(180deg) scaleX(1.5);
+        }
+
+        @-moz-document url-prefix() {
+            .vertical-text {
+                transform: rotate(180deg);
+            }
+        }
+
+        .txt-lg {
+            font-size: 10rem;
+            line-height: 1;
+        }
+
+        .text-popp {
+            color: #f16a50;
+        }
+
+        @media (max-width: 768px) {
+            .vertical-text {
+                writing-mode: horizontal-tb;
+                font-size: 4rem;
+                letter-spacing: -2px;
+                transform: none;
+                text-align: left;
+            }
+
+            .txt-lg {
+                font-size: 4rem;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'main-black': '#000000',
+                        'acscent': '#f5deb3',
+                        'popp': '#f16a50',
+                    },
+                    fontFamily: {
+                        'sans': ['Switzer', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#050505] text-[#f5deb3] antialiased">
+    <main class="min-h-screen flex items-center justify-center p-4 relative">
+        <div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-center h-full">
+
+            <div class="flex justify-start md:justify-end">
+                <h1
+                    class="txt-lg font-black text-white vertical-text select-none cursor-default hover:text-acscent transition-colors duration-500">
+                    404
+                </h1>
+            </div>
+
+            <div class="flex flex-col gap-8 text-lg md:text-xl font-light max-w-md relative z-10">
+
+                <img src="fox.gif" alt="Lost fox"
+                    class="absolute -top-[116px] md:-top-[132px] left-0 w-28 md:w-32 h-auto pointer-events-none select-none mix-blend-screen opacity-80"> 
+
+
+
+                <p class="leading-relaxed">
+                    You seem to be lost in the <span class="text-popp">Matrix</span>. The page you are looking for has been <span
+                        class="text-popp">moved</span> or doesn't exist.
+                    <span class="text-gray-400">
+                        Even this fox couldn't find the route. Let's get you back to safety.
+                    </span>
+                </p>
+
+                <div class="flex gap-6 items-center">
+                    <a href="index.html"
+                        class="inline-flex items-center gap-3 px-5 py-2.5 border border-[#f16a50]/40 rounded bg-black/60 hover:bg-[#f16a50]/10 hover:border-[#f16a50] text-[#f5deb3] hover:text-white transition-all duration-300 text-sm font-medium tracking-wide group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="transition-transform duration-300 group-hover:-translate-x-1">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        <span>Back to Home</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+</body>
+</html>
